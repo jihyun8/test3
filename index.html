@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>서브웨이</title>
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="header">
+    <!--초록색보더, 회색선-->
+    <div id="header_inner">
+      <!--가운데 정렬, 로고포지션의 기준-->
+      <h1 id="logo">
+        <!--포지션-->
+        <a href="#"><img src="images/logo.png" alt="서브웨이로고"></a>
+      </h1>
+      <ul class="login clearfix">
+        <!--float:right-->
+        <li><a href="#">매장찾기</a></li>
+        <li><a href="#">가맹신청·문의</a></li>
+        <li><a href="#">고객센터</a></li>
+      </ul>
+      <ul id="gnb" class="clearfix">
+        <!--clear:both-->
+        <li>
+          <a href="#">메뉴소개</a>
+          <ul class="sub">
+            <li><a href="#">샌드위치</a></li>
+            <li><a href="#">찹샐러드</a></li>
+            <li><a href="#">추가토핑</a></li>
+            <li><a href="#">사이드·음료</a></li>
+            <li><a href="#">단체메뉴</a></li>
+            <li><a href="#">신선한 재료 소개</a></li>
+          </ul>
+        </li>
+        <li><a href="#">이용방법</a>
+          <ul class="sub">
+            <li><a href="#">써브웨이 이용방법</a></li>
+            <li><a href="#">단체메뉴 이용방법</a></li>
+          </ul>
+        </li>
+        <li><a href="#">새소식</a></li>
+        <li><a href="#">써브웨이</a></li>
+        <li><a href="#">가맹점</a></li>
+      </ul>
+    </div>
+    <!--header_inner-->
+  </div>
+  <!--header-->
+  <!-- Swiper -->
+  <div class="swiper main_banner">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/main_banner1.jpg" alt="메인배너1"></div>
+      <div class="swiper-slide"><img src="images/main_banner2.png" alt="메인배너2"></div>
+      <div class="swiper-slide"><img src="images/main_banner3.jpg" alt="메인배너3"></div>
+      <div class="swiper-slide"><img src="images/main_banner4.jpg" alt="메인배너4"></div>
+    </div>
+    <!--wrapper-->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <!--swiper-->
+  <div id="menu">
+    <!--마진오토, 버튼박스포지션의 기준-->
+    <div class="btn_box">
+      <!--포지션앱솔루트-->
+      <a href="#" class="btn1">
+        <img src="images/icon_map.png" alt="지도아이콘">
+        매장찾기
+      </a>
+      <a href="#" class="btn2">
+        <!--아이콘 배경으로 넣음-->
+        가맹신청·문의
+      </a>
+    </div>
+    <!--btn_box-->
+    <h1>Subwey's menu</h1>
+    <ul class="clearfix">
+      <li>
+        <a href="#"><img src="images/menu_01.jpg" alt="메뉴1"></a>
+        <h3>이탈리안 비엠티</h3>
+        <p>
+          7시간 숙성된 페파로니, 살라미<br>
+          그리고 햄이 만들어내는 최상의 조화!
+        </p>
+      </li>
+      <li>
+        <a href="#"><img src="images/menu_02.jpg" alt="메뉴2"></a>
+        <h3>이탈리안 비엠티</h3>
+        <p>
+          7시간 숙성된 페파로니, 살라미<br>
+          그리고 햄이 만들어내는 최상의 조화!
+        </p>
+      </li>
+      <li>
+        <a href="#"><img src="images/menu_03.jpg" alt="메뉴3"></a>
+        <h3>이탈리안 비엠티</h3>
+        <p>
+          7시간 숙성된 페파로니, 살라미<br>
+          그리고 햄이 만들어내는 최상의 조화!
+        </p>
+      </li>
+      <li>
+        <a href="#"><img src="images/menu_04.jpg" alt="메뉴4"></a>
+        <h3>이탈리안 비엠티</h3>
+        <p>
+          7시간 숙성된 페파로니, 살라미<br>
+          그리고 햄이 만들어내는 최상의 조화!
+        </p>
+      </li>
+    </ul>
+  </div>
+  <!--menu-->
+  <div id="card">
+    <!--배경이미지-->
+    <div id="card_inner" class="clearfix">
+      <!--마진오토-->
+      <div class="blue">
+        <!--float:left, background-->
+        <h2>써브웨이를<br>
+          제대로 즐기는 방법!</h2>
+        <p><a href="#" class="card_btn">이용방법</a></p>
+      </div>
+      <!--blue-->
+      <div class="orange">
+        <!--float:right, background -->
+        <h2>50년 역사를 가진<br>
+          No.1프렌차이즈의 성장기</h2>
+        <p><a href="#" class="card_btn">써브웨이의 역사</a></p>
+      </div>
+      <!--orange-->
+    </div>
+    <!--card_inner-->
+  </div>
+  <!--card-->
+  <div id="footer">
+    <!--background-color-->
+    <div id="footer_inner" class="clearfix">
+      <!--마진오토-->
+      <div class="f_left">
+        <!--float:left-->
+        <ul>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">점주관리자</a></li>
+        </ul>
+        <p>
+          서울시 서초구 강남대로 535 프린스빌딩 15층 / 대표 : 클린클락 / 전화 : 02-797-5036<br>
+          SUBWAYS is Registered Trandemark of Subway IP lnc. ⓒ 2018 Subway Ip lnc. All Rights Reserved.
+        </p>
+      </div>
+      <!--f_left-->
+      <ul class="sns">
+        <!--float:right-->
+        <li><a href="#"><img src="images/icon_facebook.png" alt="페이스북"></a></li>
+        <li><a href="#"><img src="images/icon_twitter.png" alt="트위터"></a></li>
+        <li><a href="#"><img src="images/icon_instar.png" alt="인스타"></a></li>
+        <li><a href="#"><img src="images/icon_youtube.png" alt="유튜브"></a></li>
+      </ul>
+    </div>
+    <!--footer_inner-->
+  </div>
+  <!--footer-->
+
+
+
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".main_banner", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+    });
+  </script>
+</body>
+
+</html>

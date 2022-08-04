@@ -1,0 +1,289 @@
+@charset "utf-8";
+
+*{
+  margin:0;
+  padding:0;
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+}
+ul,ol{
+  list-style:none;
+}
+body{
+  font-family: "arial";
+  font-size: 14px;
+  line-height: 24px;
+  color:#000;
+}
+.clearfix::after{
+  content:"";
+  display: block;
+  clear:both;
+}
+
+/*header*/
+#header{
+  border-top:3px solid green;
+  border-bottom:1px solid #ccc;
+}
+#header_inner{
+  width:1200px;
+  margin:0 auto;
+  position:relative;
+  /*로고포지션의 기준*/
+}
+
+.login li{
+  float:left;
+}
+.login li a{
+  display: block;
+  padding:5px 15px;
+  border:1px solid #ccc;
+  border-radius:18px;
+  margin-left:10px;
+}
+
+.login li a:hover{
+  background-color:#ccc;
+  transition:all 0.5s;
+}
+
+#gnb> li{
+  float:left;
+  font-size:20px;
+  font-weight: bold;
+  width:20%;
+  text-align:center;
+  padding:10px 0;
+}
+
+#logo{
+  position: absolute;
+  top:30px;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+.login{
+  float:right;
+  margin:30px 0;
+}
+#gnb{
+  clear:both;
+}
+
+/*sub*/
+.sub{
+  position:absolute;
+  left:0;
+  top:100%;
+  width:100%;
+  z-index: 10;
+}
+.sub li a{
+  display: block;
+  background-color:green;
+  font-size:14px;
+  font-weight: normal;
+  padding:15px 0;
+  color:#fff;
+  border-top:1px solid rgba(255,255,255,0.3);
+  border-bottom:1px solid rgba(0,0,0,0.3);
+}
+.sub li a:hover{
+  background-color:orange;
+  color:green;
+  transition:color, background 0.5s;
+}
+#gnb>li{
+  position:relative;
+}
+
+/*css로 서브메뉴 움직이면서 나타나게 만들기*/
+.sub{
+  opacity:0;/*완전투명상태*/
+  transform:scaleY(0);
+  /*높이를 0으로 만듦*/
+  transform-origin: top;
+  /*변형기준점을 top으로 변경해줌. hover가 있는 선택자에 사용하지 않습니다.*/
+}
+#gnb>li:hover>.sub{
+  opacity: 1;
+  transform:scaleY(1);
+  transition:all 0.5s;
+}
+
+.main_banner .swiper-button-next, .main_banner .swiper-button-prev{
+  color:#fff;
+}
+.main_banner .swiper-pagination>span{
+  background-color:#fff;
+}
+
+/*menu*/
+#menu{
+  width:1200px;
+  margin:0 auto;
+  position:relative;
+  /*btn_box 포지션의 기준*/
+}
+#menu h1{
+  padding-top:150px;
+  padding-bottom:10px;
+  padding-left:30px;
+  background-image:url(images/bullet.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+#menu ul li{
+  width: 25%;
+  float:left;
+  text-align:center;
+}
+#menu ul li p{
+  padding-top:30px;
+  color:#aaa;
+  padding-bottom:80px;
+}
+#menu ul li:hover{
+  transform:translateY(-10px);
+  transition:all 0.5s;
+}
+
+/*btn_box*/
+.btn_box a{
+  display:inline-block;
+  line-height: 32px;
+  padding:15px 40px;
+  font-size:18px;
+  font-weight: bold;
+}
+.btn1{
+  background-color:orange;
+  border-radius:30px 0 0 0;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+.btn1 img{
+  vertical-align: middle;
+  display: inline-block;
+  margin-right:10px;
+}
+.btn_box a.btn2{
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+  border-radius: 0 0 30px 0;
+  background-color:green;
+  padding-left:85px;
+  color:#fff;
+  background-image: url(images/icon_franchise.png);
+  background-repeat:no-repeat;
+  background-position: 40px center;
+}
+
+.btn_box{
+  position: absolute;
+  right:50px;
+  top:-40px;
+  z-index: 10;
+}
+
+/*card*/
+#card{
+  background-image:url(images/bg_contents.gif);
+}
+#card_inner{
+  width:1200px;
+  margin:0 auto;
+  padding:100px 0;
+}
+.blue{
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+  background-image:url(images/bg_method.png);
+  background-repeat:no-repeat;
+  background-position:170px 80px;
+  color:#fff;
+  padding:30px;
+  box-sizing:border-box;
+  border-radius:30px 0 30px 30px;
+  background-color: blue;
+  float:left;
+  width:400px;
+  height:300px;
+  /*안의 내용물이 박스 크기보다 작으므로, 반드시 높이 너비 설정 해 주세요!*/
+}
+.blue:hover{
+  /*호버시에 배경이미지가 오른쪽과 위로 이동 하게 만듦(지금위치 기준)*/
+  background-position:200px 70px;
+  transition:all 0.5s;
+}
+.orange{
+  padding:30px;
+  box-sizing:border-box;
+  color:#fff;
+  border-radius:30px 0;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+  padding-left:400px;
+  background-image:url(images/bg_history.jpg);
+  background-repeat:no-repeat;
+  background-color: orange;
+  float:right;
+  width:770px;
+  height:300px;
+  /*안에 들어있는 내용물이 박스 크기보다 많이 작으므로, 크기설정 필수!*/
+}
+
+.card_btn{
+  display: inline-block;
+  border:1px solid #fff;
+  line-height:30px;
+  padding:0 20px;
+  /*라인하이트로 버튼의 높이를 설정해주고 세로가운데를 맞춘 경우에는, 패딩을 아래위를 주지 마세요!*/
+  border-radius:15px;
+  /*아래위 패딩을 주지 않은 상태에서, 한줄짜리 버튼은 라인하이트만큼의 높이를 가지게 되므로, border-radius를 라인하이트의 절반px로 설정해주면 된다.*/
+  margin-top:150px;
+}
+
+/*footer*/
+#footer{
+  background-color:#333;
+  color:#aaa;
+}
+#footer_inner{
+  width:1200px;
+  margin:0 auto;
+  padding:50px 0;
+}
+.f_left ul li{
+  display: inline-block;
+  padding-right:20px;
+  color:#ccc;
+  font-weight: bold;
+}
+.f_left ul li:nth-child(1){
+  color:#fff;
+}
+
+.f_left p{
+  padding-top:30px;
+}
+
+.sns li{
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.sns li:hover{
+  opacity: 1;
+  transition:all 0.5s;
+}
+
+.f_left{
+  float:left;
+}
+.sns{
+  float:right;
+}
